@@ -23,7 +23,7 @@ class APIClient {
                 httpClient.readTimeout(30, TimeUnit.MINUTES)
                 httpClient.connectTimeout(30, TimeUnit.MINUTES)
                 retrofit = Retrofit.Builder()
-                    .baseUrl("https://prodapiv2.werkules.com/api/")
+                    .baseUrl("https://baseurl")
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                     .addConverterFactory(ScalarsConverterFactory.create())
                     .addConverterFactory(GsonConverterFactory.create())
